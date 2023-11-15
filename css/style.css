@@ -12,7 +12,9 @@ body {
     flex-direction: column;
     margin: 0;
 }
-
+button:hover, a:hover {
+    cursor: pointer;
+}
 
 
 
@@ -26,8 +28,23 @@ header {
 .header_head {
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 10px;
+    position: relative;
+}
+
+.header--fixed {
+    background-color: #252526;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    transform: translate3d(0, 0, 0);
+    padding-top: 10px 0;
+}
+.header_head.active {
+    background-color: #252526;
 }
 
 .logo_container img {
@@ -56,6 +73,68 @@ header {
     font-weight: 700;
     line-height: normal;
 }
+
+.nav_toggle {
+    width: 30px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    z-index: 1;
+    padding: 10px 0;
+    font-size: 0;
+    color: transparent;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    display: none;
+}
+
+.nav_toggle_item {
+    display: block;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #FFF;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    transition: background-color 0.2s linear;
+}
+
+.nav_toggle.active .nav_toggle_item {
+    background: none;
+}
+.nav_toggle.active .nav_toggle_item::before {
+    transform-origin: left top;
+    transform: rotate(45deg) translateY(-2px);
+}
+.nav_toggle.active .nav_toggle_item::after {
+    transform-origin: left bottom;
+    transform: rotate(-45deg) translateY(3px);
+}
+
+.nav_toggle_item::before,
+.nav_toggle_item::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #FFF;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    transition: transform 0.2s linear;
+}
+.nav_toggle_item::before {
+    top: -8px;
+}
+.nav_toggle_item::after {
+    bottom: -8px;
+}
+
+
 
 
 .red {
@@ -235,7 +314,6 @@ header {
 .detail {
     margin-right: 150px;
     margin-top: 80px;
-    margin-bottom: 105px;
     color: #AB0000;
     font-family: Montserrat;
     font-size: 40px;
@@ -244,6 +322,7 @@ header {
     line-height: normal;
     display: flex;
     justify-content: end;
+    bottom: 30px;
 }
 
 
@@ -456,6 +535,8 @@ header {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    position: relative;
+    left: 110px;
 }
 
 .attestation_title {
@@ -655,6 +736,9 @@ header {
     margin: 20px auto;
     margin-top: 0;
 }
+.contacts p:first-child {
+    font-size: 38px;
+}
 
 
 
@@ -700,4 +784,532 @@ footer {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+
+
+@media(max-width: 1450px) {
+    .header_nav_list {
+        width: 1200px;
+    }
+    .logo_container {
+        transform: scale(0.9);
+    }
+    .header_container {
+        margin-left: 30px;
+        width: 575px;
+    }
+    .header_container h1 {
+        font-size: 72px;
+    }
+    .header_container p {
+        width: 575px;
+    }
+    .header_club {
+        margin-left: 30px;
+    }
+    .red {
+        width: 734px;
+    }
+    .boys {
+        position: absolute;
+        bottom: 50px;
+        right: -10px;
+        z-index: -100;
+        transform: scale(0.9);
+    }
+    .header_club h2 {
+        font-size: 65px;
+    }
+
+    .about_us p {
+        width: 1200px;
+    }
+    .detail p {
+        margin: 0;
+    }
+
+    .attestation_container {
+        left: 30px;
+        width: 800px;
+    }
+    .attestation_right {
+        position: relative;
+        transform: scale(0.8);
+    }
+    .attestation_text {
+        font-size: 34px;
+    }
+    .exams {
+        width: 1200px;
+    }
+    .exams_btn {
+        width: 1200px;
+    }
+    .questions {
+        width: 1200px;
+    }
+    .contacts {
+        width: 1200px;
+    }
+    .footer_nav_list {
+        width: 1200px;
+    }
+
+}
+
+
+@media(max-width: 1200px) {
+    header {
+        height: 834px;
+    }
+    .header_nav_list {
+        width: 1000px;
+    }
+    .logo_container {
+        transform: scale(0.8);
+    }
+    .header_container {
+        margin-left: 20px;
+        width: 505px;
+    }
+    .header_container h1 {
+        font-size: 60px;
+        margin-bottom: 0px;
+    }
+    .header_container p {
+        width: 505px;
+        margin-bottom: 0px;
+    }
+    .header_club {
+        margin-left: 20px;
+    }
+    .red {
+        width: 534px;
+    }
+    .boys {
+        position: absolute;
+        bottom: 50px;
+        right: -90px;
+        z-index: -100;
+        transform: scale(0.7);
+    }
+    .header_club h2 {
+        font-size: 60px;
+    }
+
+    .header_right {
+        transform: scale(0.9);
+    }
+
+
+    .about_us p {
+        width: 1000px;
+    }
+    
+    .detail {
+        position: relative;
+        bottom: 45px;
+        left: 35px;
+    }
+    .detail p {
+        margin: 0;
+    }
+    .news_photo {
+            transform: scale(0.8);
+    }
+    .news_text {
+        font-size: 30px;
+    }
+    .timetable {
+        width: 1000px;
+    }
+    .section_4 {
+        height: 820px;
+    }
+    .attestation_container {
+        left: 30px;
+        width: 800px;
+    }
+    
+    .attestation_right {
+        position: relative;
+        transform: scale(0.8);
+    }
+    
+    .attestation_text {
+        font-size: 30px;
+    }
+    .attestation button {
+        padding: 15px 32px;
+    }
+
+    
+    .exams {
+        width: 1000px;
+    }
+    
+    .exams_btn {
+        width: 1000px;
+    }
+    
+    .questions {
+        width: 1000px;
+    }
+    .section_6 h2 {
+        width: 470px;
+        font-size: 44px;
+    }
+    .contacts {
+        width: 1000px;
+    }
+    
+    .footer_nav_list {
+        width: 1000px;
+    }
+}
+
+
+
+
+@media(max-width: 998px) {
+    header {
+        height: 734px;
+    }
+    .header_nav {
+        display: flex;
+    }
+    .header_nav_list {
+        width: 800px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        bottom: 5px;
+    }
+    .header_nav_list a {
+        font-size: 13px;
+    }
+    .logo_container {
+        transform: scale(0.7);
+    }
+    .header_container {
+        margin-left: 20px;
+        width: 505px;
+    }
+    .header_container h1 {
+        font-size: 45px;
+        margin-bottom: 0px;
+    }
+    .header_container p {
+        width: 455px;
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+    .header_club {
+        margin-left: 20px;
+    }
+
+    .red {
+        width: 434px;
+    }
+    .boys {
+        position: absolute;
+        bottom: 50px;
+        right: -183px;
+        z-index: -100;
+        transform: scale(0.56);
+    }
+    .header_club h2 {
+        font-size: 45px;
+    }
+
+    .header_right {
+        transform: scale(0.8);
+        position: relative;
+        bottom: 85px;
+        left: 10px;
+    }
+
+
+
+
+    .about_us p {
+        width: 800px;
+        font-size: 30px;
+    }
+    
+    .detail {
+        position: relative;
+        bottom: 45px;
+        left: 35px;
+    }
+    .detail p {
+        margin: 0;
+    }
+
+    .section_2 {
+        height: 750px;
+    }
+    .section_2 h2 {
+        margin-bottom: 0;
+    }
+    .news_photo {
+        transform: scale(0.7);
+    }
+    .news_text {
+        font-size: 25px;
+    }
+    .news_span {
+        margin-top: 120px;
+    }
+
+
+
+
+    .timetable {
+        width: 800px;
+    }
+    .timetable_container {
+        width: 800px;
+    }
+    .section_4 {
+        height: 780px;
+    }
+    .section_4 h2 {
+        margin-bottom: 0;
+    }
+    .attestation_container {
+        left: 100px;
+        width: 700px;
+    }
+    
+    .attestation_right {
+        position: relative;
+        transform: scale(0.65);
+    }
+    
+    .attestation_text {
+        font-size: 25px;
+    }
+    .attestation button {
+        padding: 13px 30px;
+    }
+
+    
+    .exams {
+        width: 850px;
+        font-size: 30px;
+    }
+    
+    .exams_btn {
+        width: 900px;
+    }
+    
+    .questions {
+        width: 800px;
+    }
+    .section_6 h2 {
+        width: 470px;
+        font-size: 44px;
+    }
+    .contacts {
+        width: 800px;
+    }
+    
+    .footer_nav_list {
+        width: 800px;
+    }
+}
+
+
+
+@media(max-width: 770px) {
+    
+    .header_nav_list {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #252526;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .header_nav_list li {
+        display: none;
+        position: relative;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        padding: 5px 20px;
+    }
+
+    .nav_toggle {
+        display: block;
+    }
+
+
+
+
+    .header_container {
+        width: 575px;
+    }
+    .header_container h1 {
+        font-size: 48px;
+    }
+    
+    .header_container p {
+        width: 530px;
+        font-size: 23px;
+    }
+    .red {
+        width: 300px;
+    }
+    .boys {
+        display: none;
+    }
+    .header_right {
+        display: none;
+    }
+    .header_main {
+        justify-content: center;
+    }
+    .header_club h2 {
+        font-size: 48px;
+    }
+
+
+
+
+
+    .sect1_red {
+        border-left: 520px solid #6C2121;
+    }
+    .about_us p {
+        width: 600px;
+    }
+    .detail {
+        left: 90px;
+        bottom: 55px;
+    }
+
+
+
+    .section_2 {
+        height: 900px;
+    }
+    .section_2 h2 {
+        margin-top: 70px;
+    }
+    .news {
+        flex-direction: column-reverse;
+    }
+    .news_photo_red {
+        display: none;
+    }
+    .news_photo_img {
+        position: relative;
+    }
+    .news_text {
+        margin: 0 auto;
+    }
+    .news_photo {
+        position: relative;
+        width: auto;
+    }
+    .news_photo_img {
+        display: flex;
+        justify-content: center;
+        top: 0;
+        left: 0;
+    }
+    .news_span {
+        margin-top: 15px;
+    }
+
+
+    .section_3 {
+        height: 800px;
+    }
+    .timetable {
+        width: 600px;
+    }
+    .timetable_container {
+        width: 650px;
+        display: flex;
+        justify-content: center;
+    }
+    .timetable_red {
+        display: none;
+    }
+
+
+
+    .section_4 {
+        height: 1050px;
+    }
+    .section_4 h2 {
+        margin-top: 70px;
+        margin-bottom: 20px;
+    }
+    .attestation {
+        flex-direction: column;
+    }
+    .attestation_container {
+        left: 0;
+        width: 600px;
+        margin: auto;
+    }
+    .attestation button {
+        padding: 15px 32px;
+    }
+    .attestation_right {
+        transform: scale(0.75);
+        position: relative;
+        left: 120px;
+    }
+
+
+
+    .exams {
+        width: 600px;
+    }
+
+    .section_6 {
+        height: 786px;
+    }
+    .section_6 h2 {
+        width: 460px;
+        font-size: 43px;
+        margin-top: 80px;
+    }
+    .questions {
+        width: 600px;
+    }
+    .questions_list {
+        font-size: 28px;
+    }
+
+
+    .section_7 {
+        height: 717px;
+    }
+    .section_7 h2 {
+        margin-top: 70px;
+    }
+    .contacts {
+        width: 600px;
+        font-size: 30px;
+    }
+    .contacts p:first-child {
+        font-size: 35px;
+        margin-top: 30px;
+    }
+    .contacts p:last-child {
+        margin-bottom: 30px;
+    }
+    footer {
+        display: none;
+    }
 }
