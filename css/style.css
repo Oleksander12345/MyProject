@@ -57,11 +57,14 @@ header {
     background: transparent;
 }
 
+.header_nav {
+    width: 90%;
+}
+
 .header_nav_list {
     display: flex;
     list-style-type: none;
     justify-content: space-around;
-    width: 1500px;
     
 }
 .header_nav_list a {
@@ -138,7 +141,7 @@ header {
 
 
 .red {
-    width: 834px;
+    width: 45%;
     height: 100%;
     background: #6C2121;
     position: absolute;
@@ -147,6 +150,7 @@ header {
     z-index: -1000;
 }
 .boys {
+    width: 60%;
     position: absolute;
     bottom: 0;
     right: 120px;
@@ -303,7 +307,7 @@ header {
     line-height: normal;
 }
 .about_us p {
-    width: 1605px;
+    width: 80%;
     color: #FFF;
     font-family: Montserrat;
     font-size: 36px;
@@ -312,7 +316,7 @@ header {
     line-height: normal;
 }
 .detail {
-    margin-right: 150px;
+    margin-right: 10%;
     margin-top: 80px;
     color: #AB0000;
     font-family: Montserrat;
@@ -322,7 +326,6 @@ header {
     line-height: normal;
     display: flex;
     justify-content: end;
-    bottom: 30px;
 }
 
 
@@ -376,7 +379,7 @@ header {
 .news_text {
     margin-top: 40px;
     margin-left: 100px;
-    width: 635px;
+    width: 50%;
     color: #FFF;
     font-family: Montserrat;
     font-size: 36px;
@@ -438,12 +441,12 @@ header {
 }
 
 .timetable {
-    width: 1300px;
+    width: 90%;
     display: block;
     margin: auto;
 }
 .timetable_container {
-    width: 1000px;
+    width: 60%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -547,7 +550,7 @@ header {
     font-weight: 700;
     line-height: normal;
     position: relative;
-    width: 595px;
+    width: 100%;
 }
 
 .attestation_title h3 {
@@ -615,7 +618,7 @@ header {
     align-items: center;
 }
 .exams {
-    width: 1500px;
+    width: 75%;
     display: block;
     margin: auto;
     color: #FFF;
@@ -626,7 +629,7 @@ header {
     line-height: normal;
 }
 .exams_btn {
-    width: 1500px;
+    width: 80%;
     margin: auto;
     display: flex;
     justify-content: end;
@@ -665,7 +668,7 @@ header {
 }
 
 .questions {
-    width: 1500px;
+    width: 78%;
     margin: auto;
     display: block;
 }
@@ -720,7 +723,7 @@ header {
     align-items: center;
 }
 .contacts {
-    width: 1500px;
+    width: 78%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -768,11 +771,13 @@ footer {
     background: transparent;
 }
 
+.footer_nav {
+    width: 75%;
+}
 .footer_nav_list {
     display: flex;
     list-style-type: none;
     justify-content: space-around;
-    width: 1500px;
 
 }
 
@@ -789,9 +794,7 @@ footer {
 
 
 @media(max-width: 1450px) {
-    .header_nav_list {
-        width: 1200px;
-    }
+   
     .logo_container {
         transform: scale(0.9);
     }
@@ -808,53 +811,33 @@ footer {
     .header_club {
         margin-left: 30px;
     }
-    .red {
-        width: 734px;
-    }
+    
     .boys {
+        width: 70%;
         position: absolute;
         bottom: 50px;
         right: -10px;
         z-index: -100;
-        transform: scale(0.9);
     }
     .header_club h2 {
         font-size: 65px;
     }
 
-    .about_us p {
-        width: 1200px;
-    }
+    
     .detail p {
         margin: 0;
     }
 
     .attestation_container {
         left: 30px;
-        width: 800px;
     }
     .attestation_right {
         position: relative;
-        transform: scale(0.8);
     }
     .attestation_text {
         font-size: 34px;
     }
-    .exams {
-        width: 1200px;
-    }
-    .exams_btn {
-        width: 1200px;
-    }
-    .questions {
-        width: 1200px;
-    }
-    .contacts {
-        width: 1200px;
-    }
-    .footer_nav_list {
-        width: 1200px;
-    }
+
 
 }
 
@@ -862,9 +845,6 @@ footer {
 @media(max-width: 1200px) {
     header {
         height: 834px;
-    }
-    .header_nav_list {
-        width: 1000px;
     }
     .logo_container {
         transform: scale(0.8);
@@ -884,15 +864,13 @@ footer {
     .header_club {
         margin-left: 20px;
     }
-    .red {
-        width: 534px;
-    }
+    
     .boys {
+        width: 65%;
         position: absolute;
         bottom: 50px;
-        right: -90px;
+        right: 30px;
         z-index: -100;
-        transform: scale(0.7);
     }
     .header_club h2 {
         font-size: 60px;
@@ -903,38 +881,30 @@ footer {
     }
 
 
-    .about_us p {
-        width: 1000px;
-    }
-    
+
     .detail {
         position: relative;
-        bottom: 45px;
-        left: 35px;
     }
     .detail p {
         margin: 0;
     }
-    .news_photo {
-            transform: scale(0.8);
-    }
     .news_text {
         font-size: 30px;
     }
-    .timetable {
-        width: 1000px;
+
+    .timetable_container {
+        width: 80%;
     }
     .section_4 {
         height: 820px;
     }
     .attestation_container {
         left: 30px;
-        width: 800px;
+        width: 80%;
     }
     
     .attestation_right {
         position: relative;
-        transform: scale(0.8);
     }
     
     .attestation_text {
@@ -945,28 +915,14 @@ footer {
     }
 
     
-    .exams {
-        width: 1000px;
-    }
+ 
     
-    .exams_btn {
-        width: 1000px;
-    }
-    
-    .questions {
-        width: 1000px;
-    }
+
     .section_6 h2 {
         width: 470px;
         font-size: 44px;
     }
-    .contacts {
-        width: 1000px;
-    }
     
-    .footer_nav_list {
-        width: 1000px;
-    }
 }
 
 
@@ -980,7 +936,7 @@ footer {
         display: flex;
     }
     .header_nav_list {
-        width: 800px;
+        width: 91%;
         font-size: 12px;
         display: flex;
         align-items: center;
@@ -1010,22 +966,21 @@ footer {
         margin-left: 20px;
     }
 
-    .red {
-        width: 434px;
-    }
+    
     .boys {
+        width: 60%;
         position: absolute;
-        bottom: 50px;
-        right: -183px;
+        top: 24%;
         z-index: -100;
-        transform: scale(0.56);
+    }
+    .boys img {
+        width: 100%;
     }
     .header_club h2 {
         font-size: 45px;
     }
 
     .header_right {
-        transform: scale(0.8);
         position: relative;
         bottom: 85px;
         left: 10px;
@@ -1035,14 +990,11 @@ footer {
 
 
     .about_us p {
-        width: 800px;
         font-size: 30px;
     }
     
     .detail {
         position: relative;
-        bottom: 45px;
-        left: 35px;
     }
     .detail p {
         margin: 0;
@@ -1054,9 +1006,6 @@ footer {
     .section_2 h2 {
         margin-bottom: 0;
     }
-    .news_photo {
-        transform: scale(0.7);
-    }
     .news_text {
         font-size: 25px;
     }
@@ -1067,11 +1016,9 @@ footer {
 
 
 
-    .timetable {
-        width: 800px;
-    }
+    
     .timetable_container {
-        width: 800px;
+        width: 90%;
     }
     .section_4 {
         height: 780px;
@@ -1081,12 +1028,10 @@ footer {
     }
     .attestation_container {
         left: 100px;
-        width: 700px;
     }
     
     .attestation_right {
         position: relative;
-        transform: scale(0.65);
     }
     
     .attestation_text {
@@ -1098,27 +1043,23 @@ footer {
 
     
     .exams {
-        width: 850px;
         font-size: 30px;
     }
     
-    .exams_btn {
-        width: 900px;
-    }
     
     .questions {
-        width: 800px;
     }
     .section_6 h2 {
         width: 470px;
         font-size: 44px;
     }
     .contacts {
-        width: 800px;
     }
-    
+    .footer_nav {
+        width: 80%;
+    }
     .footer_nav_list {
-        width: 800px;
+        width: 100%;
     }
 }
 
@@ -1153,7 +1094,7 @@ footer {
 
 
     .header_container {
-        width: 575px;
+        width: 60%;
     }
     .header_container h1 {
         font-size: 48px;
@@ -1163,9 +1104,7 @@ footer {
         width: 530px;
         font-size: 23px;
     }
-    .red {
-        width: 300px;
-    }
+    
     .boys {
         display: none;
     }
@@ -1186,12 +1125,10 @@ footer {
     .sect1_red {
         border-left: 520px solid #6C2121;
     }
-    .about_us p {
-        width: 600px;
-    }
+
+
     .detail {
-        left: 90px;
-        bottom: 55px;
+        margin-top: 40px;
     }
 
 
@@ -1213,10 +1150,13 @@ footer {
     }
     .news_text {
         margin: 0 auto;
+        width: 80%;
+        margin-bottom: 30px;
     }
     .news_photo {
         position: relative;
-        width: auto;
+        width: 80%;
+        margin: auto;
     }
     .news_photo_img {
         display: flex;
@@ -1224,19 +1164,20 @@ footer {
         top: 0;
         left: 0;
     }
+    .news_photo_img img {
+        width: 100%;
+        height: auto;
+    }
     .news_span {
-        margin-top: 15px;
+        margin-top: 25px;
     }
 
 
     .section_3 {
         height: 800px;
     }
-    .timetable {
-        width: 600px;
-    }
     .timetable_container {
-        width: 650px;
+        width: 100%;
         display: flex;
         justify-content: center;
     }
@@ -1258,34 +1199,46 @@ footer {
     }
     .attestation_container {
         left: 0;
-        width: 600px;
         margin: auto;
     }
     .attestation button {
         padding: 15px 32px;
     }
     .attestation_right {
-        transform: scale(0.75);
         position: relative;
         left: 120px;
+        top: 40px;
+        width: 75%;
+    }
+    .attestation_right img {
+        width: 75%;
+        height: auto;
+    }
+    .red_circle {
+        width: 75%;
+    }
+    .attestation_title img {
+        width: 75%;
     }
 
 
 
     .exams {
-        width: 600px;
+        width: 90%;
+    }
+    .exams_btn {
+        margin-top: 70px;
     }
 
     .section_6 {
         height: 786px;
     }
     .section_6 h2 {
-        width: 460px;
         font-size: 43px;
         margin-top: 80px;
     }
     .questions {
-        width: 600px;
+        width: 90%;
     }
     .questions_list {
         font-size: 28px;
@@ -1299,7 +1252,6 @@ footer {
         margin-top: 70px;
     }
     .contacts {
-        width: 600px;
         font-size: 30px;
     }
     .contacts p:first-child {
@@ -1312,4 +1264,252 @@ footer {
     footer {
         display: none;
     }
+}
+
+@media(max-width: 500px) {
+    header {
+        height: 900px;
+    }
+    .header_main_container {
+        width: 75%;
+    }
+    .header_container {
+        width: 100%;
+        margin: auto;
+    }
+    .header_container p {
+        width: 100%;
+    }
+    .header_club {
+        margin: 0;
+    }
+
+
+    .sect1_red {
+        border-left: 400px solid #6C2121;
+    }
+    .about_us p {
+        font-size: 25px;
+    }
+    .about_us h3 {
+        margin: 40px;
+    }
+
+
+     .news_text {
+        margin: 0 auto;
+        width: 75%;
+        margin-bottom: 30px;
+    }
+    .news_photo {
+        position: relative;
+        width: 75%;
+        margin: auto;
+    }
+    .news_photo_img {
+        display: flex;
+        justify-content: center;
+        top: 0;
+        left: 0;
+    }
+    .news_photo_img img {
+        width: 100%;
+        height: auto;
+    }
+    .news_span {
+        margin-top: 35px;
+    }
+    .section_3 h2 {
+        width: 80%;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .timetable_list li {
+        font-size: 33px;
+    }
+
+
+    .attestation_container {
+        left: 0;
+        margin: auto;
+    }
+    
+    .attestation button {
+        padding: 15px 32px;
+    }
+    
+    .attestation_right {
+        position: relative;
+        left: 120px;
+        top: 40px;
+        width: 75%;
+    }
+    
+    .attestation_right img {
+        width: 75%;
+        height: auto;
+    }
+    
+    .red_circle {
+        width: 75%;
+        height: 300px;
+    }
+
+
+    .section_5 h2 {
+        margin-top: 75px;
+    }
+    .exams {
+        font-size: 28px;
+    }
+    
+
+    .questions_list {
+        padding: 0;
+    }
+    .section_7 {
+        height: 645px;
+    }
+    .contacts {
+        font-size: 22px;
+    }
+
+    
+}
+@media(max-width: 300px) {
+    .header_container P {
+        font-size: 16px;
+    }
+    .header_club {
+        width: 100%;
+    }
+    .header_club button {
+        width: 100%;
+        font-size: 21px;
+    }
+    .header_club h2 {
+        font-size: 45px;
+    }
+    .arrow1 {
+        display: none;
+    }
+
+
+    .about_us h3 {
+        margin-bottom: 20px;
+    }
+    .about_us p {
+        font-size: 23px;
+        margin-bottom: 0;
+    }
+    .sect1_red {
+        border-left: 200px solid #6C2121;
+    }
+    .detail {
+        font-size: 30px;
+        margin-top: 25px;
+    }
+
+
+    .section_2 h2 {
+        margin-top: 50px;
+    }
+    .news_text {
+        font-size: 24px;
+    }
+
+
+    
+    .section_3 h2 {
+        font-size: 37px;
+    }
+    .timetable_title {
+        width: 100%;
+        font-size: 27px;
+    }
+    .timetable_title img {
+        width: 107%;
+    }
+    .timetable_title h3 {
+        margin: 0;
+    }
+    .timetable_list li {
+        font-size: 25px;
+    }
+
+
+
+    .section_4 h2 {
+        margin-top: 35px;
+    }
+    
+    .attestation_title h3 {
+        margin: 0;
+    }
+    .attestation_title {
+        font-size: 24px;
+    }
+    .attestation_title img {
+        width: 105%;
+    }
+    .attestation_container button {
+        width: 100%;
+        font-size: 16px;
+    }
+    .red_circle {
+        height: 150px;
+        left: 0;
+    }
+    .attestation_right {
+        width: 50%;
+        left: 0;
+        margin: auto;
+    }
+    .attestation_right img {
+        width: 100%;
+    }
+
+
+    .section_5 h2 {
+        margin-top: 35px;
+        margin-bottom: 20px;
+    }
+    .exams {
+        font-size: 24px;
+    }
+    .exams_btn {
+        margin-top: 25px;
+    }
+
+
+    .section_6 h2 {
+        width: 95%;
+        margin: auto;
+        font-size: 26px;
+        margin-top: 35px;
+    }
+    .questions_list li {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .questions_list_li p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+    .plus {
+        margin-right: 25px;
+        margin-left: 30px;
+    }
+    .contacts p:first-child {
+        font-size: 20px;
+    }
+    .contacts p {
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+
+    }
+
 }
